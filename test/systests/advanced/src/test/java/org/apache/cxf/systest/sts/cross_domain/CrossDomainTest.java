@@ -68,15 +68,15 @@ public class CrossDomainTest extends AbstractBusClientServerTestBase {
                        launchServer(STSServer.class, true)
             );
             
-            sock = new ServerSocket(30102);
-            sock.close();
-            
-            assertTrue(
-                       "Server failed to launch",
-                       // run the server in the same process
-                       // set this to false to fork
-                       launchServer(STSServer2.class, true)
-            );
+//            sock = new ServerSocket(30102);
+//            sock.close();
+//            
+//            assertTrue(
+//                       "Server failed to launch",
+//                       // run the server in the same process
+//                       // set this to false to fork
+//                       launchServer(STSServer2.class, true)
+//            );
         } catch (IOException ex) {
             portFree = false;
             // portFree is set to false + the test won't run
